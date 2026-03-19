@@ -51,6 +51,12 @@ nav li {
     padding: 0px;
     border-radius: 15px;
     margin-bottom: 25px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+    background-color: #5a78b3;
+    transform: translateY(-3px);;
 }
 
 .project-title {
@@ -80,6 +86,12 @@ nav li {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 15px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.skill-card:hover {
+    background-color: #5a78b3;
+    transform: translateY(-3px);
 }
 
 .skill-card img {
@@ -115,11 +127,29 @@ a:visited {
 }
 
 nav a {
+    position: relative;
     display: inline-block;
-    transition: transform 0.2s ease; color: 0.2s ease;
+    text-decoration: none;
+    color:  rgb(188, 188, 247);
+    transition: color 0.2s ease;
+    
+}
+
+nav a::after {
+    content: "";
+    position: absolute; /* Place line relative to nav link */
+    left: 0;
+    bottom: -4px;
+    width: 0; /* Line invisible before hover */
+    height: 2px;
+    background-color: white;
+    transition: width 0.2s ease; /*Ensures if width changes animate smoothly over 0.2s */
 }
 
 nav a:hover {
     color: white;
-    transform: translateY(-2px);
+}
+
+nav a:hover::after {
+    width: 100%;
 }
