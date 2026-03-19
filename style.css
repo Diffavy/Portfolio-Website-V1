@@ -113,3 +113,13 @@ a:hover {
 a:visited {
     color: rgb(162, 162, 218);
 }
+
+nav a {
+    display: inline-block;
+    transition: transform 0.2s ease; color: 0.2s ease;
+}
+
+nav a:hover {
+    color: white;
+    transform: translateY(-2px);
+}
