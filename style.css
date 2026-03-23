@@ -87,6 +87,8 @@ nav li {
     padding: 20px;
     border-radius: 15px;
     transition: background-color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+    width: 100px;
 }
 
 .skill-card:hover {
@@ -95,7 +97,6 @@ nav li {
 }
 
 .skill-card img {
-    display: block;
     margin: 0 auto 20px auto;
     width: 60px;
 }
@@ -152,4 +153,35 @@ nav a:hover {
 
 nav a:hover::after {
     width: 100%;
+}
+
+/* Contact Styling */
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+
+}
+
+.contact-card img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 60px;
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.contact-card p {
+    margin: 0;
+    text-align: center
+}
+footer {
+    text-align: center;
 }
