@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     padding: 20px;
     background-color: #3D547F;
@@ -42,7 +46,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 10px 50px;
+    margin: 10px 2vw;
 }
 
 /* PROJECT CARD */
@@ -88,7 +92,7 @@ nav li {
     border-radius: 15px;
     transition: background-color 0.2s ease, transform 0.2s ease;
     display: inline-block;
-    width: 100px;
+    width: 150px;
 }
 
 .skill-card:hover {
@@ -99,12 +103,21 @@ nav li {
 .skill-card img {
     margin: 0 auto 20px auto;
     width: 60px;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+}
+
+.skill-card:hover img {
+    filter: grayscale(0%);
 }
 
 .skill-card p {
     margin: 0;
 }
 
+.skill-card:hover p {
+    color:rgb(188, 188, 247) ;
+}
 .skill-card a {
     text-decoration: none;
     color: white
@@ -161,7 +174,7 @@ nav a:hover::after {
     list-style-type: none;
     padding: 0;
     display: flex;
-    gap: 40px;
+    gap: 3vw;
 
 }
 
