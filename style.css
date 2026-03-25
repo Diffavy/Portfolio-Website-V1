@@ -113,6 +113,11 @@ nav li {
     transition: filter 0.2s ease;
 }
 
+.skill-card.comsol-card img {
+    margin: 0 ;
+    width: 80px;
+}
+
 .skill-card:hover img {
     filter: grayscale(0%);
 }
@@ -133,6 +138,41 @@ nav li {
     color: white;
 }
 
+/* EDUCATION */
+
+.education-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-card {
+    background-color: #4A6599;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-card:hover {
+    background-color: #5a78b3;
+    transform: translateY(-3px);
+}
+
+.edu-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.education-card h3{
+    margin: 0;
+}
 /* LINKS */
 a {
     color:  rgb(188, 188, 247);
