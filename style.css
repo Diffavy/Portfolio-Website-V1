@@ -235,12 +235,17 @@ nav a:hover::after {
 
 .contact-card img {
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     width: 60px;
 }
 
 .contact-card {
     width: 210px;
+    transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
 }
 .contact-card a {
     text-decoration: none;
@@ -255,9 +260,29 @@ nav a:hover::after {
 .contact-card p {
     text-align: center;
     max-width: 250px;
-    margin: 5px auto;
+    margin: 0 auto;
     word-break: break-all;
 }
+
+.contact-card .linkedin-logo {
+    width: 80px;
+    margin: -4px auto;
+}
+.contact-card .gmail-logo {
+    margin: 0px auto;
+}
+
+
+.contact-card .personal-email, .contact-card .business-email {
+    margin: 3px 0 0 0;
+}
+
+/*
+.contact-card p:last-child{
+    margin: 0;
+}
+*/
+
 footer {
     text-align: center;
 }
