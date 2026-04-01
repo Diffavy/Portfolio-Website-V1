@@ -2,11 +2,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #4A6599;
+    --secondary-color: #5a78b3;
+    --background-color: #3D547F;
+    --header-color: #314366;
+    --subtitle-color: #364b73;
+    --text-color: white;
+    --hover-color: rgb(188, 188, 247);
+}
+
 body {
     padding: 20px;
-    background-color: #3D547F;
+    background-color: var(--background-color);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: var(--text-color);
 } 
 
 
@@ -25,7 +35,7 @@ main {
 
 header {
     width: 100%;
-    background-color: #314366;
+    background-color: var(--header-color);
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
@@ -34,7 +44,7 @@ header {
 hr {
     border: none;
     height: 2px;
-    background-color: #364b73;
+    background-color: var(--subtitle-color);
     margin: 30px 0;
 }
 
@@ -52,7 +62,7 @@ nav li {
 
 /* PROJECT CARD */
 .project-card {
-    background-color: #4A6599;
+    background-color: var(--primary-color);
     padding: 0px;
     border-radius: 15px;
     margin-bottom: 25px;
@@ -60,14 +70,14 @@ nav li {
 }
 
 .project-card:hover {
-    background-color: #5a78b3;
+    background-color: var(--secondary-color);
     transform: translateY(-3px);;
 }
 
 .project-title {
     margin: 0;
     padding: 15px;
-    background-color: #364b73;
+    background-color: var(--subtitle-color);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     text-align: center;
@@ -94,7 +104,7 @@ nav li {
 }
 
 .skill-card {
-    background-color: #4A6599;
+    background-color: var(--primary-color);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 15px;
@@ -103,7 +113,7 @@ nav li {
 }
 
 .skill-card:hover {
-    background-color: #5a78b3;
+    background-color: var(--secondary-color);
     transform: translateY(-3px);
 }
 
@@ -128,15 +138,15 @@ nav li {
 }
 
 .skill-card:hover p {
-    color:rgb(188, 188, 247) ;
+    color:var(--hover-color) ;
 }
 .skill-card a {
     text-decoration: none;
-    color: white
+    color: var(--text-color)
 }
 
 .skill-card a:visited {
-    color: white;
+    color: var(--text-color);
 }
 
 /* EDUCATION */
@@ -150,7 +160,7 @@ nav li {
 }
 
 .education-card {
-    background-color: #4A6599;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 10px;
     transition: background-color 0.2s ease, transform 0.2s ease;
@@ -161,7 +171,7 @@ nav li {
 }
 
 .education-card:hover {
-    background-color: #5a78b3;
+    background-color: var(--secondary-color);
     transform: translateY(-3px);
 }
 
@@ -181,11 +191,11 @@ nav li {
 }
 /* LINKS */
 a {
-    color:  rgb(188, 188, 247);
+    color:  var(--hover-color);
 }
 
 a:hover {
-    color: white;
+    color: var(--text-color);
 }
 
 a:visited {
@@ -196,7 +206,7 @@ nav a {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color:  rgb(188, 188, 247);
+    color:  var(--hover-color);
     transition: color 0.2s ease;
     
 }
@@ -249,13 +259,13 @@ nav a:hover::after {
 }
 .contact-card a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     text-align: center;
     display: block;
 }
 
 .contact-card a:hover {
-    color: rgb(188, 188, 247);
+    color: var(--hover-color);
 }
 .contact-card p {
     text-align: center;
