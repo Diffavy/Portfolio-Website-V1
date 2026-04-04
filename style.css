@@ -24,6 +24,9 @@ section {
     margin-bottom: 40px;
 }
 
+h2 {
+    animation: fade-in 1.6s ease-in;
+}
 
 /* PAGE CONTAINER */
 main {
@@ -39,8 +42,36 @@ header {
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
-    animation: hero 1s ease-in;
+    animation: hero 0.8s ease-in;
     border-radius: 10px;
+}
+
+/* ABOUT ME */
+#about-me {
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.6;
+    border: 6px double var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    animation: fade-in 1.6s ease-in;
+}
+
+#about-me:hover {
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Hero Animation on page load */
@@ -78,6 +109,7 @@ nav li {
 }
 
 /* PROJECT CARD */
+
 .project-card {
     background-color: var(--primary-color);
     padding: 0px;
@@ -113,17 +145,21 @@ nav li {
     }
 }
 
+h1 .left-entrance, h1 .right-entrance {
+    display: inline-block;
+}
+
 .left-entrance {
-    animation: left-entrance 1s ease-out;
+    animation: left-entrance 0.8s ease-out 0.6s both;
 }
 
 .right-entrance {
-    animation: right-entrance 1s ease-out;
+    animation: right-entrance 0.8s ease-out 0.6s both;
 }
 
 .project-card:hover {
     background-color: var(--secondary-color);
-    transform: translateY(-3px);;
+    transform: translateY(-3px);
 }
 
 .project-title {
@@ -146,7 +182,7 @@ nav li {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    max-width: 700px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
