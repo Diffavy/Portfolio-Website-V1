@@ -43,6 +43,7 @@ header {
     border-radius: 10px;
 }
 
+/* Hero Animation on page load */
 @keyframes hero {
     0% {
         transform: translateY(-100%);
@@ -83,6 +84,41 @@ nav li {
     border-radius: 15px;
     margin-bottom: 25px;
     transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Entrance Animations for project cards */
+
+@keyframes left-entrance {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes right-entrance {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.left-entrance {
+    animation: left-entrance 1s ease-out;
+}
+
+.right-entrance {
+    animation: right-entrance 1s ease-out;
 }
 
 .project-card:hover {
