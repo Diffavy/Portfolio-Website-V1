@@ -39,6 +39,22 @@ header {
     text-align: center;
     padding: 10px;
     margin-bottom: 30px;
+    animation: hero 1s ease-in;
+    border-radius: 10px;
+}
+
+@keyframes hero {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+        background-color: var(--background-color);
+    }
+    
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        background-color: var(--header-color);
+    }
 }
 
 hr {
