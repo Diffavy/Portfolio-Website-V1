@@ -61,7 +61,7 @@ header {
 #about-me:hover {
     border-color: var(--secondary-color);
     background-color: var(--primary-color);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1);
 }
 
 @keyframes fade-in {
@@ -159,7 +159,7 @@ h1 .left-entrance, h1 .right-entrance {
 
 .project-card:hover {
     background-color: var(--secondary-color);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1);
 }
 
 .project-title {
@@ -202,7 +202,7 @@ h1 .left-entrance, h1 .right-entrance {
 
 .skill-card:hover {
     background-color: var(--secondary-color);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.15);
 }
 
 .skill-card img {
@@ -262,7 +262,7 @@ h1 .left-entrance, h1 .right-entrance {
 
 .education-card:hover {
     background-color: var(--secondary-color);
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.1);
 }
 
 .education-card:hover .edu-logo {
@@ -345,7 +345,7 @@ nav a:hover::after {
 }
 
 .contact-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.2);
 }
 .contact-card a {
     text-decoration: none;
