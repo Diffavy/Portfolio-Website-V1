@@ -260,6 +260,11 @@ h1 .left-entrance, h1 .right-entrance {
 
 }
 
+.education-card h3 {
+    border-left: 10px solid var(--background-color);
+}
+
+
 .education-card:hover {
     background-color: var(--secondary-color);
     transform: translateY(-3px) scale(1.1);
@@ -377,11 +382,6 @@ nav a:hover::after {
     margin: 3px 0 0 0;
 }
 
-/*
-.contact-card p:last-child{
-    margin: 0;
-}
-*/
 
 footer {
     text-align: center;
