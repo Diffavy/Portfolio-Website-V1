@@ -45,6 +45,9 @@ main {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 header {
@@ -67,6 +70,15 @@ header {
     border-radius: 10px;
     transition: background-color 0.2s ease, transform 0.2s ease;
     animation: fade-in 1.6s ease-in;
+}
+
+.about-pic {
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    object-fit: cover;
+    float: left;
+    margin: 0 15px 15px 0;
 }
 
 #about-me:hover {
