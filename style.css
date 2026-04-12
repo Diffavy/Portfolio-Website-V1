@@ -496,9 +496,12 @@ footer {
         margin: 0 0 0 12px;
     }
 
-    .contact-card {
-        width: 150px;
+    .contact-list {
         gap: 10px;
+    }
+
+    .contact-card {
+        width: 120px;
     }
     .contact-card p {
         font-size: 0.7em;
