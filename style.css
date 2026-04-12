@@ -461,6 +461,14 @@ footer {
         padding: 10px;
     }
 
+    .about-pic {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 180px;
+        height: 180px;
+    }
+
     #about-me:hover {
         transform: translateY(-3px) scale(1.02);
     }
