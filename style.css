@@ -12,6 +12,7 @@ html {
     }
 }
 
+
 :root {
     --primary-color: #4A6599;
     --secondary-color: #5a78b3;
@@ -402,4 +403,77 @@ nav a:hover::after {
 
 footer {
     text-align: center;
+}
+
+/* Mobile styling */
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap : 10px;
+        max-width: 60%;
+        margin: 5px auto;
+    }
+
+    nav li {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    #about-me {
+        padding: 10px;
+    }
+
+    #about-me:hover {
+        transform: translateY(-3px) scale(1.02);
+    }
+
+    .skill-card {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .skill-card p {
+        font-size: 0.7em;
+    }
+
+    .skill-card img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .skill-card.comsol-card img {
+        width: 40px;
+        margin: 0 auto 10px auto;
+    }
+
+    .education-card {
+        grid-template-columns: 40px 1fr 2fr;
+        padding: 5px;
+    }
 }
