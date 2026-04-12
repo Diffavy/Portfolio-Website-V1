@@ -416,7 +416,7 @@ footer {
 
     h1 {
         font-size: 1.5em;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     h2 {
@@ -475,7 +475,38 @@ footer {
     }
 
     .education-card {
-        grid-template-columns: 40px 1fr 2fr;
-        padding: 5px;
+        grid-template-areas:
+            "logo title"
+            "details details";
+        grid-template-columns: 60px 1fr;
+        padding: 10px;
+        row-gap: 5px;
+    }
+    .edu-logo {
+        grid-area: logo;
+        filter: grayscale(0%);
+    }
+
+    .education-card h3 {
+        grid-area: title;
+    }
+
+    .education-card p {
+        grid-area: details;
+        margin: 0 0 0 12px;
+    }
+
+    .contact-card {
+        width: 150px;
+        gap: 10px;
+    }
+    .contact-card p {
+        font-size: 0.7em;
+    }
+    .contact-card img {
+        width: 40px;
+    }
+    .contact-card .linkedin-logo {
+        width: 60px;
     }
 }
