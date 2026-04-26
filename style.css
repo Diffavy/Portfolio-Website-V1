@@ -101,11 +101,10 @@ header {
 }
 
 /* Dialog Styling */
-dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
 
 dialog {
+    position: relative;
     border: solid 8px var(--secondary-color);
     border-radius: 10px;
     padding: 20px;
@@ -113,6 +112,22 @@ dialog {
     width: 90%;
     background-color: var(--header-color);
     color: var(--text-color);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-dialog {
+    background: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /* ABOUT ME */
