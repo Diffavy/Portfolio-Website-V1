@@ -1,13 +1,17 @@
-const dialog = document.getElementById('edutainment-dialog');
-const closeButton = document.getElementById('close-dialog');
+const dialog = document.querySelectorAll('dialog');
+const closeButton = document.querySelectorAll('.close-dialog');
 
-closeButton.addEventListener('click', () => {
-    dialog.close();
+closeButton.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('dialog').close();
+    });
 });
-
+ 
 // Add event listener to the project card to open the dialog
-const projectCard = document.querySelector('.project-card');
+const projectCard = document.querySelectorAll('.project-card');
 
-projectCard.addEventListener('click', () => {
-    dialog.showModal();
+projectCard.forEach(card => {
+    card.addEventListener('click', () => {
+        card.nextElementSibling.showModal();
+    });
 });

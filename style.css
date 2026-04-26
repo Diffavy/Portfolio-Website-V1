@@ -100,6 +100,21 @@ header {
     border-radius: 10px;
 }
 
+/* Dialog Styling */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog {
+    border: solid 8px var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    background-color: var(--header-color);
+    color: var(--text-color);
+}
+
 /* ABOUT ME */
 #about-me {
     max-width: 100%;
