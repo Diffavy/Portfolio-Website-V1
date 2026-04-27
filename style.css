@@ -114,6 +114,23 @@ dialog {
     color: var(--text-color);
 }
 
+ dialog h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+dialog p:not(.dialog-text) {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.dialog-text {
+    line-height: 1.3;
+    width: 90%;
+    margin: 0 auto;
+}
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
     animation: dialog-backdrop 0.3s ease-out;
@@ -240,6 +257,7 @@ nav li {
     border-radius: 15px;
     margin-bottom: 25px;
     transition: background-color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
 }
 
 /* Entrance Animations for project cards */
@@ -302,6 +320,16 @@ h1 .left-entrance, h1 .right-entrance {
     margin-top: 0px;
     text-align: left;
 }
+
+.project-image {
+    display: block;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: solid 4px var(--secondary-color);
+}
+
 
 /* SKILLS */
 .skills-list {

@@ -1,12 +1,20 @@
 const dialog = document.querySelectorAll('dialog');
 const closeButton = document.querySelectorAll('.close-dialog');
 
+
 closeButton.forEach(button => {
     button.addEventListener('click', () => {
         button.closest('dialog').close();
     });
 });
  
+dialog.forEach(d => {
+    d.addEventListener("click", (e) => {
+        if (e.target === d) {
+            d.close()
+        }
+    })
+})
 // Add event listener to the project card to open the dialog
 const projectCard = document.querySelectorAll('.project-card');
 

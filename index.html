@@ -48,14 +48,15 @@
                 <div class="project-card">
                     <h3 class="project-title"> Physics Rocket game - <em>Python</em> </h3>
                     <p class="project-details">In this group project, I helped build an interactive rocket game using Pygame coupled with Newtonian mechanics to simulate
-                        the rocket's trajectory. 
+                        the rocket's trajectory. <strong><em>Read more...</em></strong>
                     </p>
                 </div>
                 <dialog>
                     <h3>Edutainment with IBM Watson</h3>
-                    <p>Collaborated on an edutainment project using IBM Watson's AI capabilities to create an interactive learning experience. The game allows players to adjust the rocket's 
-                        launch angle and initial velocity, providing a fun and educational experience in physics. I implemented some independent mini-games that followed the games overarching 
-                        storyline, such a maze game where the player had to collect parts/coins to upgrade their rocket. We used a variety of packages including Pygame, NumPy, and SciPy.</p>
+                    <p class="dialog-text">Collaborated on an edutainment (a blend of "education" and "entertainment") project using IBM Watson's text-to-speech API to create an interactive learning experience. 
+                        The game allows players to adjust the rocket's launch angle and initial velocity, providing a fun and educational experience in physics. I implemented some independent mini-games and levels 
+                        that followed the game's overarching storyline, such as a maze game where the player had to collect parts/coins to upgrade their rocket as well as a level that taught the player the basics of 
+                        bearings. I used a variety of packages including Pygame, NumPy, and SciPy. Below I have shown recordings of my bearings game and maze game contributions:</p>
                         <p>Check out the project on <a href="https://github.com/Diffavy/Edutainment-with-IBM-Watson" target="_blank">GitHub</a></p> 
                         <button class="close-dialog">&times;</button>
                 </dialog>
@@ -63,13 +64,21 @@
             <div class="right-entrance">
                 <div class="project-card">
                     <h3 class="project-title">Investigation of random number generation and work engine cycles - <em>Python</em></h3>
-                    <p class="project-details">Using packages like matplotlib and scipy I was able to successfully demonstrate fundamental relationships for processes like 
-                        adiabatic expansion and isothermal expansion.
+                    <p class="project-details">Using packages like matplotlib and scipy I was able to successfully demonstrate fundamental relationships for processes not limited to but including 
+                        adiabatic expansion and isothermal expansion. <strong><em>Read more...</em></strong>
                     </p>
                 </div>
                 <dialog>
                     <h3>Investigation of random number generation and work engine cycles</h3>
-                    <p>In this project, I explored the intricacies of random number generation and its applications in simulating work engine cycles. By leveraging Python's powerful libraries such as Matplotlib and SciPy, I was able to visualize and analyze the behavior of different processes, including adiabatic expansion and isothermal expansion. The project provided insights into the fundamental relationships governing these thermodynamic processes, showcasing the importance of accurate random number generation in scientific simulations.</p>
+                    <p class="dialog-text">In this project, I explored the intricacies of random number generation and its applications in simulating work engine cycles. By leveraging Python's powerful 
+                        libraries such as Matplotlib and SciPy, I was able to visualize and analyze the behavior of different processes, including adiabatic expansion and isothermal expansion. 
+                        The project provided insights into the fundamental relationships governing these thermodynamic processes, showcasing the importance of accurate random number generation 
+                        in scientific simulations. Below I showcase a simulation highlighting the process of the Carnot engine:</p>
+                    <figure>
+                        <img src="images/Carnot Engine Plot.png" class="project-image" alt="Carnot engine cycle plot"/>
+                        <figcaption class="project-caption">A simulation of the Carnot engine cycle, showcasing the relationship between pressure and volume during the different stages of the cycle. 
+                            <em>Visit the "Work engines and cycles" section for more details.</em></figcaption>
+                    </figure>
                     <p>Check out the project here: <a href="./files/Work engines and cycles.pdf" target="_blank">Work engines and cycles.pdf</a></p>
                     <p>Download the Python code here: <a href="./files/Work engines and cycles.py" target="_blank">Work engines and cycles.py</a></p>
                     <button class="close-dialog">&times;</button>
@@ -80,14 +89,28 @@
                     <h3 class="project-title">Investigation of electrons tunnelling through potential barriers - <em>Julia</em></h3>
                     <p class="project-details">Through the use of wavefunction and the intuitive relationship between transfer and scattering matrices, I was able to model how
                         electrons travel through potential barriers of varying constraints (e.g.single finite potential barrier, potential step and
-                        an arbitrary number of barriers)
+                        an arbitrary number of barriers). <strong><em>Read more...</em></strong>
                     </p>
                 </div>
                 <dialog>
                     <h3>Investigation of electrons tunnelling through potential barriers</h3>
-                    <p>In this project, I explored the intricacies of random number generation and its applications in simulating work engine cycles. By leveraging Python's powerful libraries such as Matplotlib and SciPy, I was able to visualize and analyze the behavior of different processes, including adiabatic expansion and isothermal expansion. The project provided insights into the fundamental relationships governing these thermodynamic processes, showcasing the importance of accurate random number generation in scientific simulations.</p>
-                    <p>Check out the project here: <a href="./files/Electrons tunnelling.pdf" target="_blank">Electrons tunnelling.pdf</a></p>
-                    <p>Download the Julia code here: <a href="./files/Electrons tunnelling.jl" target="_blank">Electrons tunnelling.jl</a></p>
+                    <p class="dialog-text">In this project, I investigated how electrons interact with different configurations of potential barriers. We start by examining how electrons interact with a single finite
+                        potential barrier, then move on to a potential step so on and so forth until we can model arbitrary number of potential barriers. Our main measures of interest are the transmission and
+                        reflection coefficients, calculated using the transfer and scattering matrices, as well as the amplitude of the wavefunction across the barriers. Below I show examples of these measures of
+                        interest, the transmission probability and wavefunction amplitude, for a double barrier system and finite barrier system respectively.</p>
+                    <figure>
+                        <img src="images/Transmission Prob - Finite Barrier.png"  class="project-image" alt="Transmission probability for a finite barrier system"/>
+                        <figcaption class="project-caption">The transmission probability for a finite barrier system, showcasing the relationship between the energy of the incoming electron and the probability of it 
+                            tunnelling through the barrier. <em>Visit the "Electron Tunneling.pdf" [Figure 2.2] for more details.</em></caption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/Wavefunction Amplitude - Double Barrier.png" class="project-image" alt="Wavefunction amplitude for a double barrier system"/>
+                        <figcaption class="project-caption">The wavefunction amplitude for a double barrier system, showcasing the relationship between the position of the electron and the amplitude of its wavefunction across the
+                            five unique regions. <em>Visit the "Electron Tunneling.pdf" [Figure 3.3] for more details.</em></figcaption>
+                    </figure>
+                    <p>Check out the project here: <a href="./files/Electron Tunneling.pdf" target="_blank">Electron tunneling.pdf</a></p>
+                    <p>Download the Julia code here: <a href="./files/Electron Tunneling.jl" target="_blank">Electron tunneling.jl</a></p>
                     <button class="close-dialog">&times;</button>
                 </dialog>
             </div>
