@@ -23,3 +23,26 @@ projectCard.forEach(card => {
         card.nextElementSibling.showModal();
     });
 });
+
+// Theme switching
+const themeSelector = document.getElementById('theme-selector');
+
+if (localStorage.getItem('theme')) {
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme === 'blueprint') {
+        document.documentElement.removeAttribute('data-theme');
+    } else {
+        document.documentElement.setAttribute('data-theme', savedTheme)
+    }
+    themeSelector.value = savedTheme
+}
+
+ themeSelector.addEventListener('change', (event) => {
+    const selectedTheme = event.target.value;
+    localStorage.setItem('theme', selectedTheme)
+    if (selectedTheme === 'blueprint') {
+        document.documentElement.removeAttribute('data-theme');
+    } else {
+        document.documentElement.setAttribute('data-theme', selectedTheme);
+    }
+ })
