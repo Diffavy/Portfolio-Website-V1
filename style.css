@@ -14,6 +14,9 @@ html {
 
 
 :root {
+
+    /* Blueprint color scheme */
+    /*
     --primary-color: #4A6599;
     --secondary-color: #5a78b3;
     --background-color: #3D547F;
@@ -21,6 +24,30 @@ html {
     --subtitle-color: #364b73;
     --text-color: white;
     --hover-color: rgb(188, 188, 247);
+    --visited-color: rgb(162, 162, 218);
+    */
+
+    /* Nord color scheme */
+    /*
+    --primary-color: #54515E;      
+    --secondary-color: #6C6876;    
+    --background-color: #33313A;   
+    --header-color: #151419;       
+    --subtitle-color: #29272E;     
+    --text-color: #E9E9EB;         
+    --hover-color: #9B99A4;
+    --visited-color: rgb(125, 125, 128);
+    */
+
+    /* Meridian color scheme */
+    --primary-color: #c5c3d6;      
+    --secondary-color: #afaac6;    
+    --background-color: #F1F0F2;   
+    --header-color: #C8C6EA;       
+    --subtitle-color: #CFCDD3;     
+    --text-color: #151419;       
+    --hover-color: #615b96;
+    --visited-color: rgb(90, 90, 117);
 }
 
 body {
@@ -450,7 +477,7 @@ a:hover {
 }
 
 a:visited {
-    color: rgb(162, 162, 218);
+    color: var(--visited-color);
 }
 
 nav a {
@@ -474,7 +501,7 @@ nav a::after {
 }
 
 nav a:hover {
-    color: white;
+    color: var(--text-color);
 }
 
 nav a:hover::after {
