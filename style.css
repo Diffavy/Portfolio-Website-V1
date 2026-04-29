@@ -61,7 +61,36 @@ html {
     font-weight: lighter;
     color: var(--text-color);
     cursor: pointer;
+    animation: theme-selector-entrance 2s ease-out;
 }
+
+@keyframes theme-selector-entrance {
+    0% {
+        transform: translateY(-700%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Mobile styling for theme selector */
+
+@media (max-width: 480px) {
+    #theme-selector {
+        top: 180px;
+        left: 20px;
+        width: 90px;
+        height: 30px;
+        font-size: 0.8em;
+        padding: 0 5px;
+        animation: theme-selector-entrance 2s ease-out;
+    }
+}
+
+
 body {
     padding: 20px;
     background-color: var(--background-color);
