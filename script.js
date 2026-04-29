@@ -46,3 +46,22 @@ if (localStorage.getItem('theme')) {
         document.documentElement.setAttribute('data-theme', selectedTheme);
     }
  })
+
+ // Set the current year in the footer
+ const yearElement = document.getElementById('current-year');
+ yearElement.textContent = new Date().getFullYear();
+
+// Set the age in the about me section
+const dob = new Date('2003-04-12')
+const today = new Date()
+let age = today.getFullYear() - dob.getFullYear()
+
+const hasHadBirthdayThisYear = 
+    today.getMonth() > dob.getMonth() || 
+    (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate())
+
+if (!hasHadBirthdayThisYear) {
+    age--
+}
+
+document.getElementById('age').textContent = age
