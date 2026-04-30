@@ -261,7 +261,8 @@ dialog[open] {
     object-fit: cover;
     float: left;
     margin: 0 15px 0px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--primary-color);
+
 }
 
 #about-me:hover {
@@ -398,6 +399,13 @@ h1 .left-entrance, h1 .right-entrance {
     border: solid 4px var(--secondary-color);
 }
 
+.project-video {
+    display: block;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    border: solid 4px var(--secondary-color);
+}
 
 /* SKILLS */
 .skills-list {
