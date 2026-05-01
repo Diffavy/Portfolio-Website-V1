@@ -57,7 +57,7 @@ html {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
     background-color: var(--primary-color);
     font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
     font-weight: lighter;
     color: var(--text-color);
     cursor: pointer;
@@ -94,7 +94,7 @@ html {
 body {
     padding: 20px;
     background-color: var(--background-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
     color: var(--text-color);
 } 
 
@@ -255,8 +255,8 @@ dialog[open] {
 }
 
 .about-pic {
-    width: 270px;
-    height: 270px;
+    width: 320px;
+    height: 320px;
     border-radius: 15px;
     object-fit: cover;
     float: left;
@@ -272,6 +272,9 @@ dialog[open] {
     box-shadow: 
         10px 10px 20px rgba(0, 0, 0, 0.2),
         -10px -10px 20px rgba(0, 0, 0, 0.2);
+    .about-pic {
+        border-color: var(--subtitle-color);
+    }
 }
 
 @keyframes fade-in {
