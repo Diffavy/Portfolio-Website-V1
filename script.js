@@ -20,7 +20,9 @@ const projectCard = document.querySelectorAll('.project-card');
 
 projectCard.forEach(card => {
     card.addEventListener('click', () => {
-        card.nextElementSibling.showModal();
+        const modal = card.nextElementSibling;
+        modal.showModal();
+        modal.scrollTop = 0;
     });
 });
 

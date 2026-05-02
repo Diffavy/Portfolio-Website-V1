@@ -172,7 +172,10 @@ header {
 
 
 dialog {
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
     border: solid 8px var(--secondary-color);
     border-radius: 10px;
     padding: 20px;
@@ -210,12 +213,12 @@ dialog[open] {
 
 @keyframes dialog-open {
     0% {
-        transform: scale(0.5);
+        transform: translate(-50%, -25%) scale(0.5);
         opacity: 0;
     }
     
     100% {
-        transform: scale(1);
+        transform: translate(-50%, -25%) scale(1);
         opacity: 1;
     }
 }
