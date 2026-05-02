@@ -242,6 +242,48 @@ dialog[open] {
     font-weight: bold;
 }
 
+.theme-image-container {
+    display: grid;
+    grid-template-areas: 
+        "blueprint nord"
+        "meridian palette";
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.theme-image-container img {
+    width: 100%;
+    border-radius: 10px;
+    border: solid 4px var(--secondary-color);
+}
+
+.blueprint-theme-image {
+    grid-area: blueprint;
+}
+
+.nord-theme-image {
+    grid-area: nord;
+}
+
+.meridian-theme-image {
+    grid-area: meridian;
+
+}
+
+.colour-palette-image {
+    grid-area: palette;
+    object-fit: contain;
+}
+
+.theme-image-container figcaption {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
 /* ABOUT ME */
 #about-me {
     max-width: 100%;
