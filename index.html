@@ -6,8 +6,15 @@
   <title>Harrun Muhiden | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <script>
+    const savedTheme = localStorage.getItem('theme')
+
+    if (savedTheme && savedTheme !== 'blueprint') {        
+            document.documentElement.setAttribute('data-theme', savedTheme)
+    }
+  </script>
 </head>
 
 <body>
@@ -92,6 +99,7 @@
                             <figcaption>Colour Palette</figcaption>
                         </figure>
                     </div>
+                    <p>Check out the project on <a href="https://github.com/Diffavy/Portfolio-Website-V1" target="_blank">GitHub</a></p>
                     <button class="close-dialog">&times;</button>
                 </dialog>
             </div>
