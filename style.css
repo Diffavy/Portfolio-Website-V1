@@ -280,7 +280,7 @@ dialog[open] {
     object-fit: contain;
 }
 
-.theme-image-container figcaption {
+figcaption {
     text-align: center;
     margin-top: 6px;
     font-size: 0.9em;
