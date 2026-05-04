@@ -64,3 +64,62 @@ if (!hasHadBirthdayThisYear) {
 }
 
 document.getElementById('age').textContent = age
+
+// Scroll animations
+// For skill cards
+const skillCards = document.querySelectorAll('.skill-card');
+
+const skillCardObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-scale');
+        }})
+    });
+
+skillCards.forEach(card => {
+    skillCardObserver.observe(card);
+});
+
+
+// For education cards
+const educationCards = document.querySelectorAll('.education-card');
+
+const educationCardObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-down');
+        }})
+    });
+
+educationCards.forEach(card => {
+    educationCardObserver.observe(card);
+});
+
+// For contact section
+const contactCards = document.querySelectorAll('.contact-card');
+
+const contactCardObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-scale');
+        }})
+    });
+
+contactCards.forEach(card => {
+    contactCardObserver.observe(card);
+});
+
+// For subheadings
+
+const subheadings = document.querySelectorAll('.subheading');
+
+const subheadingObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('subheading-entrance');
+        }})
+    });
+
+subheadings.forEach(subheading => {
+    subheadingObserver.observe(subheading);
+});
