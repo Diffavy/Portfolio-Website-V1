@@ -76,21 +76,6 @@ html {
     }
 }
 
-/* Mobile styling for theme selector */
-
-@media (max-width: 480px) {
-    #theme-selector {
-        top: 180px;
-        left: 20px;
-        width: 90px;
-        height: 30px;
-        font-size: 0.8em;
-        padding: 0 5px;
-        animation: theme-selector-entrance 2s ease-out;
-    }
-}
-
-
 body {
     padding: 20px;
     background-color: var(--background-color);
@@ -775,8 +760,50 @@ footer {
         height: 180px;
     }
 
+    #theme-selector {
+        top: 192px;
+        left: 20px;
+        width: 90px;
+        height: 30px;
+        font-size: 0.8em;
+        padding: 0 5px;
+        animation: theme-selector-entrance 2s ease-out;
+    }
+
     #about-me:hover {
         transform: translateY(-3px) scale(1.02);
+    }
+
+    .project-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px auto;
+        border: solid 4px var(--secondary-color);
+    }
+
+    .project-video {
+        display: block;
+        width: 100%;
+        margin: 20px auto 0 auto;
+        border-radius: 10px;
+        border: solid 4px var(--secondary-color);
+    }
+
+    .theme-image-container {
+        grid-template-areas: 
+            "blueprint"
+            "nord"
+            "meridian"
+            "palette";
+        grid-template-columns: 1fr;
+    }
+
+    .theme-image-container img {
+        width: 100%;
+        border-radius: 10px;
+        border: solid 4px var(--secondary-color);
     }
 
     .skill-card {
