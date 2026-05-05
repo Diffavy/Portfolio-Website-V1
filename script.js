@@ -46,6 +46,39 @@ if (localStorage.getItem('theme')) {
     }
  })
 
+
+ // Cursor animation for hero section 
+
+let i = 0;
+const beforeCursor = "Harrun Muhiden ";
+const afterCursor = " Software Engineer";
+const divider = "<span class='cursor hero-divider'>|</span>";
+const nameEl = document.querySelector('.hero-highlight');
+
+const cursorEl = document.getElementById('type-title');
+
+function typeTitle() {
+    if (i < beforeCursor.length) {
+        nameEl.innerHTML += beforeCursor[i]
+        i++
+        setTimeout(typeTitle, 100);
+    } else if (i === beforeCursor.length) {
+        nameEl.innerHTML += divider
+        i++
+        setTimeout(typeTitle, 200);
+    } else if (i > (beforeCursor.length) && i <= (beforeCursor.length + afterCursor.length)) {
+        nameEl.innerHTML += afterCursor[i - beforeCursor.length - 1]
+        i++
+        setTimeout(typeTitle, 100);
+    } else {
+        cursorEl.style.display = 'none'
+        document.querySelector('.hero-divider').style.opacity = '1'
+    }
+
+}
+
+typeTitle()
+
  // Set the current year in the footer
  const yearElement = document.getElementById('current-year');
  yearElement.textContent = new Date().getFullYear();
