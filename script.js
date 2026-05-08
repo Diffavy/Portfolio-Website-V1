@@ -1,36 +1,43 @@
 const dialog = document.querySelectorAll('dialog');
 const closeButton = document.querySelectorAll('.close-dialog');
 
-
+// Close button functionality for dialogs
 closeButton.forEach(button => {
     button.addEventListener('click', () => {
         button.closest('dialog').close();
+        document.body.style.overflow = ''; // Re-enable background scrolling when dialog is closed
     });
 });
  
+// Close dialog when clicking outside of the content area
 dialog.forEach(d => {
     d.addEventListener("click", (e) => {
         if (e.target === d) {
             d.close()
+            document.body.style.overflow = ''; // Re-enable background scrolling when dialog is closed
         }
     })
 })
 // Add event listener to the project card to open the dialog
 const projectCard = document.querySelectorAll('.project-card');
 
+// Open the dialog when the project card is clicked
 projectCard.forEach(card => {
     card.addEventListener('click', () => {
         const modal = card.nextElementSibling;
         modal.showModal();
         modal.scrollTop = 0; // Reset scroll position to top when opened
         modal.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll the dialog into view when opened
+        setTimeout(() => {
+            document.body.style.overflow = 'hidden'; // Disable background scrolling when dialog is open, delay to allow scrollIntoView to complete
+        }, 500);
     });
 });
 
 // Theme switching
 const themeSelector = document.getElementById('theme-selector');
 
-if (localStorage.getItem('theme')) {
+if (localStorage.getItem('theme')) {    
     const savedTheme = localStorage.getItem('theme')
     if (savedTheme) {
         themeSelector.value = savedTheme
