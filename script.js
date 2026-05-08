@@ -22,7 +22,8 @@ projectCard.forEach(card => {
     card.addEventListener('click', () => {
         const modal = card.nextElementSibling;
         modal.showModal();
-        modal.scrollTop = 0;
+        modal.scrollTop = 0; // Reset scroll position to top when opened
+        modal.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll the dialog into view when opened
     });
 });
 
