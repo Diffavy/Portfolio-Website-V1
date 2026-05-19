@@ -49,8 +49,8 @@ html {
 
 #theme-selector {
     position: absolute;
-    top: 130px;
-    left: 35px;
+    bottom: 10px;
+    left: 10px;
     width: 120px;
     padding: 10px 15px;
     border-radius: 5px;
@@ -140,6 +140,7 @@ main {
 }
 
 header {
+    position: relative;
     width: 100%;
     background-color: var(--header-color);
     text-align: center;
@@ -147,6 +148,9 @@ header {
     margin-bottom: 30px;
     animation: hero 0.8s ease-in;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Dialog Styling */
@@ -776,8 +780,8 @@ footer {
     }
 
     #theme-selector {
-        top: 192px;
-        left: 20px;
+        bottom: -32px;
+        left: 2px;
         width: 90px;
         height: 30px;
         font-size: 0.8em;
