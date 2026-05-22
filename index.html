@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harrun Muhiden | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <script>
-    const savedTheme = localStorage.getItem('theme')
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harrun Muhiden | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme && savedTheme !== 'blueprint') {        
-            document.documentElement.setAttribute('data-theme', savedTheme)
-    }
-  </script>
-</head>
+      if (savedTheme && savedTheme !== "blueprint") {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    </script>
+  </head>
 
-<body>
-
+  <body>
     <!--
     <img src="images/tree-silhouette.svg" alt="Tree Silhouette" class="tree left-tree fade-in"/>
     <img src="images/tree-silhouette.svg" alt="Tree Silhouette" class="tree right-tree fade-in"/>
@@ -26,282 +28,499 @@
     <img src="images/tree-silhouette-trunk.svg" alt="Tree Silhouette" class="tree lower-right-tree fade-in"/>
     -->
 
-    
     <header class="hero">
-        <select id="theme-selector">
-            <option value="blueprint">Blueprint</option>
-            <option value="nord">Nord</option>
-            <option value="meridian">Meridian</option>
-        </select>
-        <h1><span class="hero-highlight"></span><span id="type-title"class="cursor">|</span></h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <select id="theme-selector">
+        <option value="blueprint">Blueprint</option>
+        <option value="nord">Nord</option>
+        <option value="meridian">Meridian</option>
+      </select>
+      <h1>
+        <span class="hero-highlight"></span
+        ><span id="type-title" class="cursor">|</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <img src="./images/profile-pic.png" alt="Profile picture of Harrun Muhiden" class="about-pic"/>
-            <p>Hello! My name is Harrun Muhiden, a <span id="age"></span> year old software engineer. Before transitioning into software engineering, I completed my
-            Bachelor's in Physics where I got to learn about the intrinsically beautiful mechanics behind the laws that govern our Universe. 
-            <br><br>
-            Beyond that I'm a lover of both football and MMA (Mixed Martial Arts). In my own time I like to keep my body in tip top condition by carefully
-            tuning my diet and recovery (it becomes a game of optimization after a while). My love for software comes from that inevitable <strong>EUREKA!</strong> 
-            moment we all get having mulled over a bug that just won't fix itself. That tug of war is what drew me and my competitive streak towards software.</p>
-        </section>
+      <section id="about-me">
+        <h2>About Me</h2>
+        <img
+          src="./images/profile-pic.png"
+          alt="Profile picture of Harrun Muhiden"
+          class="about-pic"
+        />
+        <p>
+          Hello! My name is Harrun Muhiden, a <span id="age"></span> year old
+          software engineer. Before transitioning into software engineering, I
+          completed my Bachelor's in Physics where I got to learn about the
+          intrinsically beautiful mechanics behind the laws that govern our
+          Universe. <br /><br />
+          Beyond that I'm a lover of both football and MMA (Mixed Martial Arts).
+          In my own time I like to keep my body in tip top condition by
+          carefully tuning my diet and recovery (it becomes a game of
+          optimization after a while). My love for software comes from that
+          inevitable <strong>EUREKA!</strong> moment we all get having mulled
+          over a bug that just won't fix itself. That tug of war is what drew me
+          and my competitive streak towards software.
+        </p>
+      </section>
 
-        <hr>
+      <hr />
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="right-entrance">
-                <div class="project-card">
-                    <h3 class="project-title">Portfolio Website - <em>HTML/CSS/JavaScript</em></h3>
-                    <p class="project-details">Constructed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills. <strong><em>Read more...</em></strong>
-                    </p>
-                </div>
-                <dialog>
-                    <h3>Portfolio Website</h3>
-                    <p class="dialog-text">This is my personal portfolio website, built from scratch using HTML, CSS and JavaScript. For layout and structure, I used Flexbox and semantic HTML throughout. 
-                        The site is fully responsive, with media queries handling mobile layouts. 
-                        <br><br>
-                        In CSS, I styled components using separate classes to keep styles independent and easy to maintain. I also 
-                        added entrance animations on page load, including fade-in, left and right slide-ins, and implemented smooth scrolling for a better user experience. Below I have included a video showcasing 
-                        the animations on page load as well as the theme selector functionality:
-                        <br><br>
-                        <figure>
-                            <video class="project-video" controls>
-                                <source src="./videos/animations-on-page-load.mp4" type="video/mp4">
-                            </video>
-                            <figcaption>Animations and theme selector functionality</figcaption>
-                        </figure>
-                        JavaScript powers the modal dialogs for the project descriptions. Click event handlers and DOM manipulation are used to open and close each modal, including closing it by clicking 
-                        outside the dialog element.
-                        <br><br>
-                        <figure>
-                            <video class="project-video" controls>
-                                <source src="./videos/modal-dialogs.mp4" type="video/mp4">
-                            </video>
-                            <figcaption>Modal dialog functionality</figcaption>
-                        </figure>
-                        I implemented a theme selector using custom CSS variables, that allow users to switch between three different themes: Blueprint, Nord and Meridian. These themes were designed intentionally 
-                        in a monochromatic colour scheme using Figma. Belove I have included images showcasing the three themes and the colour palette used to design them:
-                    </p>
-                    <div class="theme-image-container">
-                        <figure>
-                            <img src="./images/blueprint-theme.png" alt="Blueprint theme colour scheme" class="blueprint-theme-image"/>
-                            <figcaption>Blueprint Theme</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/nord-theme.png" alt="Nord theme colour scheme" class="nord-theme-image"/>
-                            <figcaption>Nord Theme</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/meridian-theme.png" alt="Meridian theme colour scheme" class="meridian-theme-image"/>
-                            <figcaption>Meridian Theme</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./images/colour-palette.png" alt="Colour palette used for the three themes" class="colour-palette-image"/>
-                            <figcaption>Colour Palette</figcaption>
-                        </figure>
-                    </div>
-                    <p>Check out the project on <a href="https://github.com/Diffavy/Portfolio-Website-V1" target="_blank">GitHub</a></p>
-                    <button class="close-dialog">&times;</button>
-                </dialog>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="right-entrance">
+          <div class="project-card">
+            <h3 class="project-title">
+              Portfolio Website - <em>HTML/CSS/JavaScript</em>
+            </h3>
+            <p class="project-details">
+              Constructed a responsive portfolio website using HTML, CSS, and
+              JavaScript to showcase my projects and skills.
+              <strong><em>Read more...</em></strong>
+            </p>
+          </div>
+          <dialog>
+            <h3>Portfolio Website</h3>
+            <p class="dialog-text">
+              This is my personal portfolio website, built from scratch using
+              HTML, CSS and JavaScript. For layout and structure, I used Flexbox
+              and semantic HTML throughout. The site is fully responsive, with
+              media queries handling mobile layouts. <br /><br />
+              In CSS, I styled components using separate classes to keep styles
+              independent and easy to maintain. I also added entrance animations
+              on page load, including fade-in, left and right slide-ins, and
+              implemented smooth scrolling for a better user experience. Below I
+              have included a video showcasing the animations on page load as
+              well as the theme selector functionality:
+              <br /><br />
+              <figure>
+                <video class="project-video" controls>
+                  <source
+                    src="./videos/animations-on-page-load.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <figcaption>
+                  Animations and theme selector functionality
+                </figcaption>
+              </figure>
+              JavaScript powers the modal dialogs for the project descriptions.
+              Click event handlers and DOM manipulation are used to open and
+              close each modal, including closing it by clicking outside the
+              dialog element.
+              <br /><br />
+              <figure>
+                <video class="project-video" controls>
+                  <source src="./videos/modal-dialogs.mp4" type="video/mp4" />
+                </video>
+                <figcaption>Modal dialog functionality</figcaption>
+              </figure>
+              I implemented a theme selector using custom CSS variables, that
+              allow users to switch between three different themes: Blueprint,
+              Nord and Meridian. These themes were designed intentionally in a
+              monochromatic colour scheme using Figma. Belove I have included
+              images showcasing the three themes and the colour palette used to
+              design them:
+            </p>
+            <div class="theme-image-container">
+              <figure>
+                <img
+                  src="./images/blueprint-theme.png"
+                  alt="Blueprint theme colour scheme"
+                  class="blueprint-theme-image"
+                />
+                <figcaption>Blueprint Theme</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./images/nord-theme.png"
+                  alt="Nord theme colour scheme"
+                  class="nord-theme-image"
+                />
+                <figcaption>Nord Theme</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./images/meridian-theme.png"
+                  alt="Meridian theme colour scheme"
+                  class="meridian-theme-image"
+                />
+                <figcaption>Meridian Theme</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./images/colour-palette.png"
+                  alt="Colour palette used for the three themes"
+                  class="colour-palette-image"
+                />
+                <figcaption>Colour Palette</figcaption>
+              </figure>
             </div>
-            <div class="left-entrance">
-                <div class="project-card">
-                    <h3 class="project-title"> Physics Rocket game - <em>Python</em> </h3>
-                    <p class="project-details">In this group project, I helped build an interactive rocket game using Pygame coupled with Newtonian mechanics to simulate
-                        the rocket's trajectory. <strong><em>Read more...</em></strong>
-                    </p>
-                </div>
-                <dialog>
-                    <h3>Edutainment with IBM Watson</h3>
-                    <p class="dialog-text">Collaborated on an edutainment (a blend of "education" and "entertainment") project using IBM Watson's text-to-speech API to create an interactive learning experience. 
-                        The game allows players to adjust the rocket's launch angle and initial velocity, providing a fun and educational experience in physics.
-                        <br><br>
-                        I implemented some independent mini-games and levels 
-                        that followed the game's overarching storyline, such as a maze game where the player had to collect parts/coins to upgrade their rocket and a level that taught the player the basics of 
-                        bearings. I used a variety of packages including Pygame, NumPy, and SciPy. Below I have shown recordings of my bearings game and maze game contributions:</p>
-                        <p> Bearings & Maze levels:</p>
-                        <video class="project-video" controls>
-                            <source src="./videos/edutainment-game-vids.mp4" type="video/mp4">
-                        </video>
-                        <p>Check out the project on <a href="https://github.com/Diffavy/Edutainment-with-IBM-Watson" target="_blank">GitHub</a></p>
-                    <button class="close-dialog">&times;</button>
-                </dialog>
-            </div>
-            <div class="right-entrance">
-                <div class="project-card">
-                    <h3 class="project-title">Investigation of random number generation and work engine cycles - <em>Python</em></h3>
-                    <p class="project-details">Using packages like matplotlib and scipy I was able to successfully demonstrate fundamental relationships for processes not limited to but including 
-                        adiabatic expansion and isothermal expansion. <strong><em>Read more...</em></strong>
-                    </p>
-                </div>
-                <dialog>
-                    <h3>Investigation of random number generation and work engine cycles</h3>
-                    <p class="dialog-text">In this project, I explored the intricacies of random number generation and its applications in simulating work engine cycles. By leveraging Python's powerful 
-                        libraries such as Matplotlib and SciPy, I was able to visualize and analyze the behavior of different processes, including adiabatic expansion and isothermal expansion. 
-                        The project provided insights into the fundamental relationships governing these thermodynamic processes, showcasing the importance of accurate random number generation 
-                        in scientific simulations. Below I showcase a simulation highlighting the process of the Carnot engine:</p>
-                    <figure>
-                        <img src="images/carnot-engine-plot.png" class="project-image" alt="Carnot engine cycle plot"/>
-                        <figcaption class="project-caption">A simulation of the Carnot engine cycle, showcasing the relationship between pressure and volume during the different stages of the cycle. 
-                            <em>Visit the "Work engines and cycles" section for more details.</em></figcaption>
-                    </figure>
-                    <p>Check out the project here: <a href="./files/work-engines-and-cycles.pdf" target="_blank">work-engines-and-cycles.pdf</a></p>
-                    <p>Download the Python code here: <a href="./files/work-engines-and-cycles.ipynb" target="_blank">work-engines-and-cycles.ipynb</a></p>
-                    <button class="close-dialog">&times;</button>
-                </dialog>
-            </div>
-            <div class="left-entrance">
-                <div class="project-card">
-                    <h3 class="project-title">Investigation of electrons tunnelling through potential barriers - <em>Julia</em></h3>
-                    <p class="project-details">Through the use of wavefunction and the intuitive relationship between transfer and scattering matrices, I was able to model how
-                        electrons travel through potential barriers of varying constraints (e.g.single finite potential barrier, potential step and
-                        an arbitrary number of barriers). <strong><em>Read more...</em></strong>
-                    </p>
-                </div>
-                <dialog>
-                    <h3>Investigation of electrons tunnelling through potential barriers</h3>
-                    <p class="dialog-text">In this project, I investigated how electrons interact with different configurations of potential barriers. We start by examining how electrons interact with a single finite
-                        potential barrier, then move on to a potential step so on and so forth until we can model arbitrary number of potential barriers. Our main measures of interest are the transmission and
-                        reflection coefficients, calculated using the transfer and scattering matrices, as well as the amplitude of the wavefunction across the barriers. Below I show examples of these measures of
-                        interest, the transmission probability and wavefunction amplitude, for a double barrier system and finite barrier system respectively.</p>
-                    <figure>
-                        <img src="images/transmission-prob_finite-barrier.png"  class="project-image" alt="Transmission probability for a finite barrier system"/>
-                        <figcaption class="project-caption">The transmission probability for a finite barrier system, showcasing the relationship between the energy of the incoming electron and the probability of it 
-                            tunnelling through the barrier. <em>Visit the "Electron Tunneling.pdf" [Figure 2.2] for more details.</em></caption>
-                    </figure>
+            <p>
+              Check out the project on
+              <a
+                href="https://github.com/Diffavy/Portfolio-Website-V1"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+            <button class="close-dialog">&times;</button>
+          </dialog>
+        </div>
+        <div class="left-entrance">
+          <div class="project-card">
+            <h3 class="project-title">Physics Rocket game - <em>Python</em></h3>
+            <p class="project-details">
+              In this group project, I helped build an interactive rocket game
+              using Pygame coupled with Newtonian mechanics to simulate the
+              rocket's trajectory. <strong><em>Read more...</em></strong>
+            </p>
+          </div>
+          <dialog>
+            <h3>Edutainment with IBM Watson</h3>
+            <p class="dialog-text">
+              Collaborated on an edutainment (a blend of "education" and
+              "entertainment") project using IBM Watson's text-to-speech API to
+              create an interactive learning experience. The game allows players
+              to adjust the rocket's launch angle and initial velocity,
+              providing a fun and educational experience in physics.
+              <br /><br />
+              I implemented some independent mini-games and levels that followed
+              the game's overarching storyline, such as a maze game where the
+              player had to collect parts/coins to upgrade their rocket and a
+              level that taught the player the basics of bearings. I used a
+              variety of packages including Pygame, NumPy, and SciPy. Below I
+              have shown recordings of my bearings game and maze game
+              contributions:
+            </p>
+            <p>Bearings & Maze levels:</p>
+            <video class="project-video" controls>
+              <source
+                src="./videos/edutainment-game-vids.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <p>
+              Check out the project on
+              <a
+                href="https://github.com/Diffavy/Edutainment-with-IBM-Watson"
+                target="_blank"
+                >GitHub</a
+              >
+            </p>
+            <button class="close-dialog">&times;</button>
+          </dialog>
+        </div>
+        <div class="right-entrance">
+          <div class="project-card">
+            <h3 class="project-title">
+              Investigation of random number generation and work engine cycles -
+              <em>Python</em>
+            </h3>
+            <p class="project-details">
+              Using packages like matplotlib and scipy I was able to
+              successfully demonstrate fundamental relationships for processes
+              not limited to but including adiabatic expansion and isothermal
+              expansion. <strong><em>Read more...</em></strong>
+            </p>
+          </div>
+          <dialog>
+            <h3>
+              Investigation of random number generation and work engine cycles
+            </h3>
+            <p class="dialog-text">
+              In this project, I explored the intricacies of random number
+              generation and its applications in simulating work engine cycles.
+              By leveraging Python's powerful libraries such as Matplotlib and
+              SciPy, I was able to visualize and analyze the behavior of
+              different processes, including adiabatic expansion and isothermal
+              expansion. The project provided insights into the fundamental
+              relationships governing these thermodynamic processes, showcasing
+              the importance of accurate random number generation in scientific
+              simulations. Below I showcase a simulation highlighting the
+              process of the Carnot engine:
+            </p>
+            <figure>
+              <img
+                src="images/carnot-engine-plot.png"
+                class="project-image"
+                alt="Carnot engine cycle plot"
+              />
+              <figcaption class="project-caption">
+                A simulation of the Carnot engine cycle, showcasing the
+                relationship between pressure and volume during the different
+                stages of the cycle.
+                <em
+                  >Visit the "Work engines and cycles" section for more
+                  details.</em
+                >
+              </figcaption>
+            </figure>
+            <p>
+              Check out the project here:
+              <a href="./files/work-engines-and-cycles.pdf" target="_blank"
+                >work-engines-and-cycles.pdf</a
+              >
+            </p>
+            <p>
+              Download the Python code here:
+              <a href="./files/work-engines-and-cycles.ipynb" target="_blank"
+                >work-engines-and-cycles.ipynb</a
+              >
+            </p>
+            <button class="close-dialog">&times;</button>
+          </dialog>
+        </div>
+        <div class="left-entrance">
+          <div class="project-card">
+            <h3 class="project-title">
+              Investigation of electrons tunnelling through potential barriers -
+              <em>Julia</em>
+            </h3>
+            <p class="project-details">
+              Through the use of wavefunction and the intuitive relationship
+              between transfer and scattering matrices, I was able to model how
+              electrons travel through potential barriers of varying constraints
+              (e.g.single finite potential barrier, potential step and an
+              arbitrary number of barriers).
+              <strong><em>Read more...</em></strong>
+            </p>
+          </div>
+          <dialog>
+            <h3>
+              Investigation of electrons tunnelling through potential barriers
+            </h3>
+            <p class="dialog-text">
+              In this project, I investigated how electrons interact with
+              different configurations of potential barriers. We start by
+              examining how electrons interact with a single finite potential
+              barrier, then move on to a potential step so on and so forth until
+              we can model arbitrary number of potential barriers. Our main
+              measures of interest are the transmission and reflection
+              coefficients, calculated using the transfer and scattering
+              matrices, as well as the amplitude of the wavefunction across the
+              barriers. Below I show examples of these measures of interest, the
+              transmission probability and wavefunction amplitude, for a double
+              barrier system and finite barrier system respectively.
+            </p>
+            <figure>
+              <img
+                src="images/transmission-prob_finite-barrier.png"
+                class="project-image"
+                alt="Transmission probability for a finite barrier system"
+              />
+              <figcaption class="project-caption">
+                The transmission probability for a finite barrier system,
+                showcasing the relationship between the energy of the incoming
+                electron and the probability of it tunnelling through the
+                barrier.
+                <em
+                  >Visit the "Electron Tunneling.pdf" [Figure 2.2] for more
+                  details.</em
+                >
+              </figcaption>
+            </figure>
 
-                    <figure>
-                        <img src="images/wavefunction-amplitude_double-barrier.png" class="project-image" alt="Wavefunction amplitude for a double barrier system"/>
-                        <figcaption class="project-caption">The wavefunction amplitude for a double barrier system, showcasing the relationship between the position of the electron and the amplitude of its wavefunction across the
-                            five unique regions. <em>Visit the "Electron Tunneling.pdf" [Figure 3.3] for more details.</em></figcaption>
-                    </figure>
-                    <p>Check out the project here: <a href="./files/electron-tunneling.pdf" target="_blank">electron-tunneling.pdf</a></p>
-                    <p>Download the Julia code here: <a href="./files/electron-tunneling.jl" target="_blank">electron-tunneling.jl</a></p>
-                    <button class="close-dialog">&times;</button>
-                </dialog>
-            </div>
-        </section>
+            <figure>
+              <img
+                src="images/wavefunction-amplitude_double-barrier.png"
+                class="project-image"
+                alt="Wavefunction amplitude for a double barrier system"
+              />
+              <figcaption class="project-caption">
+                The wavefunction amplitude for a double barrier system,
+                showcasing the relationship between the position of the electron
+                and the amplitude of its wavefunction across the five unique
+                regions.
+                <em
+                  >Visit the "Electron Tunneling.pdf" [Figure 3.3] for more
+                  details.</em
+                >
+              </figcaption>
+            </figure>
+            <p>
+              Check out the project here:
+              <a href="./files/electron-tunneling.pdf" target="_blank"
+                >electron-tunneling.pdf</a
+              >
+            </p>
+            <p>
+              Download the Julia code here:
+              <a href="./files/electron-tunneling.jl" target="_blank"
+                >electron-tunneling.jl</a
+              >
+            </p>
+            <button class="close-dialog">&times;</button>
+          </dialog>
+        </div>
+      </section>
 
-        <hr>
+      <hr />
 
-        <section id="skills">
-            <h2 class="subheading">Skills</h2>
-            <ul class="skills-list">
-                <li class="skill-card">
-                    <a href="https://www.python.org/" target="_blank"><img src="images/python-logo.svg" alt="Python logo"/>
-                    <p>Python</p> </a>
-                </li>
-                <li class="skill-card">
-                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="images/html-logo.svg" alt="HTML logo"/>
-                    <p>HTML</p> </a>
-                </li>
-                <li class="skill-card">
-                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"><img src="images/css-logo.svg" alt="CSS logo"/>
-                    <p>CSS</p></a>
-                </li>
-                <li class="skill-card">
-                    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="images/javascript-logo.svg" alt="JavaScript logo"/>
-                    <p>JavaScript</p></a>
-                </li>
-                <li class="skill-card">
-                    <a href="https://julialang.org/" target="_blank"><img src="images/julia-logo.svg" alt="Julia logo"/>
-                    <p>Julia</p></a>
-                </li>
-                <li class="skill-card">
-                    <a href="https://www.mathworks.com/products/matlab.html" target="_blank"><img src="images/matlab-logo.svg" alt="MATLAB logo"/>
-                    <p>MATLAB</p></a>
-                </li>
-                <li class="skill-card comsol-card">
-                    <a href="https://www.comsol.com/" target="_blank"><img src="images/comsol-logo.svg" alt="COMSOL logo"/>
-                    <p>COMSOL</p></a>
-                </li>
-                <li class="skill-card">
-                    <a href="https://www.swift.org/" target="_blank"><img src="images/swift-logo.svg" alt="Swift logo"/>
-                    <p>Swift</p></a>
-                </li>
-            </ul>        
-        </section>
+      <section id="skills">
+        <h2 class="subheading">Skills</h2>
+        <ul class="skills-list">
+          <li class="skill-card">
+            <a href="https://www.python.org/" target="_blank"
+              ><img src="images/python-logo.svg" alt="Python logo" />
+              <p>Python</p>
+            </a>
+          </li>
+          <li class="skill-card">
+            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"
+              ><img src="images/html-logo.svg" alt="HTML logo" />
+              <p>HTML</p>
+            </a>
+          </li>
+          <li class="skill-card">
+            <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"
+              ><img src="images/css-logo.svg" alt="CSS logo" />
+              <p>CSS</p></a
+            >
+          </li>
+          <li class="skill-card">
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"
+              ><img src="images/javascript-logo.svg" alt="JavaScript logo" />
+              <p>JavaScript</p></a
+            >
+          </li>
+          <li class="skill-card">
+            <a href="https://julialang.org/" target="_blank"
+              ><img src="images/julia-logo.svg" alt="Julia logo" />
+              <p>Julia</p></a
+            >
+          </li>
+          <li class="skill-card">
+            <a
+              href="https://www.mathworks.com/products/matlab.html"
+              target="_blank"
+              ><img src="images/matlab-logo.svg" alt="MATLAB logo" />
+              <p>MATLAB</p></a
+            >
+          </li>
+          <li class="skill-card comsol-card">
+            <a href="https://www.comsol.com/" target="_blank"
+              ><img src="images/comsol-logo.svg" alt="COMSOL logo" />
+              <p>COMSOL</p></a
+            >
+          </li>
+          <li class="skill-card">
+            <a href="https://www.swift.org/" target="_blank"
+              ><img src="images/swift-logo.svg" alt="Swift logo" />
+              <p>Swift</p></a
+            >
+          </li>
+        </ul>
+      </section>
 
-        <hr>
+      <hr />
 
-        <section id="education">
-            <h2 class="subheading">Education</h2>
-            <ul class="education-list">
-                <li class="education-card">
-                    <img src="images/loughborough-logo.png" alt="loughborough university crest" class="edu-logo"/>
-                    <h3>Loughborough University</h3>
-                    <p>Physics BSc (Hons) | 2:1</p>
-                </li>
-                <li class="education-card">
-                    <img src="images/dunraven-logo.png" alt="Dunraven logo" class="edu-logo"/>
-                    <h3>Dunraven Sixth Form</h3>
-                    <p>A Level | A<sup>*</sup> A B</p>
-                </li>
-                <li class="education-card">
-                    <img src="images/dunraven-logo.png" alt="Dunraven logo" class="edu-logo"/>
-                    <h3>Dunraven Secondary School</h3>
-                    <p>GCSEs | Three Grade 9's, One Grade 8, Four Grade 7s, 2 Grade 6s, An A<sup>*</sup>, A Dist<sup>*</sup> </p>
-                </li>
-            </ul>
-        </section>
+      <section id="education">
+        <h2 class="subheading">Education</h2>
+        <ul class="education-list">
+          <li class="education-card">
+            <img
+              src="images/loughborough-logo.png"
+              alt="loughborough university crest"
+              class="edu-logo"
+            />
+            <h3>Loughborough University</h3>
+            <p>Physics BSc (Hons) | 2:1</p>
+          </li>
+          <li class="education-card">
+            <img
+              src="images/dunraven-logo.png"
+              alt="Dunraven logo"
+              class="edu-logo"
+            />
+            <h3>Dunraven Sixth Form</h3>
+            <p>A Level | A<sup>*</sup> A B</p>
+          </li>
+          <li class="education-card">
+            <img
+              src="images/dunraven-logo.png"
+              alt="Dunraven logo"
+              class="edu-logo"
+            />
+            <h3>Dunraven Secondary School</h3>
+            <p>
+              GCSEs | Three Grade 9's, One Grade 8, Four Grade 7s, 2 Grade 6s,
+              An A<sup>*</sup>, A Dist<sup>*</sup>
+            </p>
+          </li>
+        </ul>
+      </section>
 
-        <hr>
+      <hr />
 
-        <section id="contact">
-            <h2 class="subheading">Contact</h2>
-            <!-- Both emails, Linkedin, Github, Blog and Phone Number-->
-                <ul class="contact-list">
-                    <li class="contact-card">
-                        <a href="https://github.com/Diffavy" target="_blank">
-                            <img class="github-logo" src="images/github.svg" alt="GitHub logo"/>
-                            <p>GitHub</p>
-                        </a>
-                    </li>
-                    <li class="contact-card">
-                        <a href="mailto:harrunmuhiden@gmail.com" target="_blank">
-                            <img class="gmail-logo" src="images/gmail.svg" alt="Gmail logo"/>
-                            <p class="personal-email">For personal inquiries: </p>
-                            <p class="personal-email">harrunmuhiden@gmail.com</p>
-                        </a>
-                    </li>
-                    <li class="contact-card">
-                        <a href="https://www.linkedin.com/in/harrun-muhiden/" target="_blank">
-                            <img class="linkedin-logo" src="images/linkedin.svg" alt="Linkedin logo"/>
-                            <p>LinkedIn</p>
-                        </a>
-                    </li>
-                    <li class="contact-card">
-                        <a href="mailto:harrunbusiness@gmail.com" target="_blank">
-                            <img class="gmail-logo" src="images/gmail.svg" alt="Gmail logo"/>
-                            <p class="business-email">For business inquiries: </p>
-                            <p class="business-email">harrunbusiness@gmail.com</p>
-                        </a>
-                    </li>
-                    <li class="contact-card">
-                        <a href="files/harrun-muhiden's-cv.pdf" target="_blank">
-                            <img class="cv-logo" src="images/cv-logo.svg" alt="CV logo"/>
-                            <p>View CV</p>
-                        </a>
-                    </li>
-                </ul>
-        </section>
+      <section id="contact">
+        <h2 class="subheading">Contact</h2>
+        <!-- Both emails, Linkedin, Github, Blog and Phone Number-->
+        <ul class="contact-list">
+          <li class="contact-card">
+            <a href="https://github.com/Diffavy" target="_blank">
+              <img
+                class="github-logo"
+                src="images/github.svg"
+                alt="GitHub logo"
+              />
+              <p>GitHub</p>
+            </a>
+          </li>
+          <li class="contact-card">
+            <a href="mailto:harrunmuhiden@gmail.com" target="_blank">
+              <img class="gmail-logo" src="images/gmail.svg" alt="Gmail logo" />
+              <p class="personal-email">For personal inquiries:</p>
+              <p class="personal-email">harrunmuhiden@gmail.com</p>
+            </a>
+          </li>
+          <li class="contact-card">
+            <a
+              href="https://www.linkedin.com/in/harrun-muhiden/"
+              target="_blank"
+            >
+              <img
+                class="linkedin-logo"
+                src="images/linkedin.svg"
+                alt="Linkedin logo"
+              />
+              <p>LinkedIn</p>
+            </a>
+          </li>
+          <li class="contact-card">
+            <a href="mailto:harrunbusiness@gmail.com" target="_blank">
+              <img class="gmail-logo" src="images/gmail.svg" alt="Gmail logo" />
+              <p class="business-email">For business inquiries:</p>
+              <p class="business-email">harrunbusiness@gmail.com</p>
+            </a>
+          </li>
+          <li class="contact-card">
+            <a href="files/harrun-muhiden's-cv.pdf" target="_blank">
+              <img class="cv-logo" src="images/cv-logo.svg" alt="CV logo" />
+              <p>View CV</p>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <em><p>&copy; <span id="current-year"></span> Harrun Muhiden. All rights reserved.</p></em>
+      <em
+        ><p>
+          &copy; <span id="current-year"></span> Harrun Muhiden. All rights
+          reserved.
+        </p></em
+      >
     </footer>
-</body>
-<script src="./script.js"></script>
+  </body>
+  <script src="./script.js"></script>
 </html>
