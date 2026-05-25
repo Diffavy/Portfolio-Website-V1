@@ -77,6 +77,94 @@
 
       <section id="projects">
         <h2>Projects</h2>
+        <div class="left-entrance">
+          <div class="project-card">
+            <h3 class="project-title">
+              Fighter Comparison using a Scraper - <br />
+              <em>Python, BeautifulSoup & HTML/CSS/JavaScript</em>
+            </h3>
+            <p class="project-details">
+              Built a web scraper using Python and BeautifulSoup to collect data
+              on fighters, and created a responsive web application using HTML,
+              CSS, and JavaScript to display and compare the data.
+              <strong><em>Read more...</em></strong>
+            </p>
+          </div>
+          <dialog>
+            <h3>The Fighter Comparison - Scraper & Website</h3>
+            <p class="dialog-text">
+              I created a web scraper using Python and BeautifulSoup to collect
+              data on MMA fighters from one of the most popular MMA data-rich
+              sites, <a href="https://www.sherdog.com/">Sherdog</a>.
+            </p>
+            <p>The Scraper</p>
+
+            <p class="dialog-text">
+              Initially, I inspected the site and the specific wrappers for key
+              data points like the name and record of a given fighter. Using
+              their corresponding identifiers and/or class names I created a
+              list of what had to be parsed from the fighter page. Using
+              requests and BeautifulSoup I was able to have a formatted version
+              of the html I originally inspected. Using a variety of helper
+              functions I collated all the necessary data from the fighter's
+              page using a "saveFighter" function which accepts the URL of the
+              fighters page (on Sherdog) as an argument.
+              <br /><br />
+              The function would create a JSON file for the fighter in a
+              directory called "data", including all of the aforementioned key
+              data points. It also updates the fighter.json file which includes
+              entries for each fighter and the corresponding filepath for their
+              data, which is a necessity for when JavaScript uses the given
+              data.
+            </p>
+
+            <p>The Comparison Website</p>
+
+            <p class="dialog-text">
+              I use the scraper to obtain data on 86 fighters from the UFC,
+              across all of it's weightclasses, and produce a website that shows
+              their key stats head to head. The HTML mainly handles the wrappers
+              and basic formatting of the page, the CSS handles the three column
+              grid layout with each fighter card on either side and the stat
+              labels as the center piece.
+              <br /><br />
+              The JavaScript uses asynchronous functions to fetch the filepaths
+              for each fighter from "fighters.json". Then using event listeners
+              for both the input and and clicking events (selecting the fighter
+              name from dropdown menu or closing a fighter card) the html is
+              updated. I used a class called "hidden" on a variety of elements,
+              in conjunction with helper functions, to toggle those elements in
+              and out of visibility dependent on user input.
+              <br /><br />
+              As an example the central stat label divider would only be visible
+              if both fighters have been selected. For some of the stats, like
+              the finish rate and average fight time, I had to do some
+              calculations using data from all of the fights for a given
+              fighter, also implemented in JavaScript. Below I have included a
+              video showcasing the website's functionality:
+            </p>
+            <p>The Fighter Comparison Website showcase:</p>
+            <video class="project-video" controls>
+              <source
+                src="./videos/the-fighter-comparison.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <p>
+              Check out the website here at
+              <a href="https://diffavy.github.io/mma-scraper/" target="_blank"
+                >The Fighter Comparison</a
+              >
+            </p>
+            <p>
+              And check out the project on
+              <a href="https://github.com/Diffavy/mma-scraper" target="_blank"
+                >GitHub</a
+              >
+            </p>
+            <button class="close-dialog">&times;</button>
+          </dialog>
+        </div>
         <div class="right-entrance">
           <div class="project-card">
             <h3 class="project-title">
