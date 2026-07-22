@@ -479,6 +479,10 @@ h1 .right-entrance {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.project-card:active {
+  transform: translateY(-3px) scale(0.98);
+}
+
 .project-title {
   margin: 0;
   padding: 15px;
@@ -509,6 +513,7 @@ h1 .right-entrance {
   margin: 20px auto 0 auto;
   border-radius: 10px;
   border: solid 4px var(--secondary-color);
+  cursor: pointer;
 }
 
 /* SKILLS */
@@ -542,6 +547,9 @@ h1 .right-entrance {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.skill-card:active {
+  transform: translateY(-3px) scale(0.9);
+}
 .skill-card img {
   margin: 0 auto 20px auto;
   width: 60px;
@@ -688,6 +696,10 @@ nav a:hover::after {
 
 .contact-card:hover {
   transform: translateY(-3px) scale(1.2);
+}
+
+.contact-card:active {
+  transform: translateY(-3px) scale(1.1);
 }
 .contact-card a {
   text-decoration: none;
